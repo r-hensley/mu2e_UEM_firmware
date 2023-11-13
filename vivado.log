@@ -1,0 +1,132 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Mon Nov 13 16:49:42 2023
+# Process ID: 406649
+# Current directory: /home/rhensley/Documents/mu2e_UEM_firmware
+# Command line: vivado
+# Log file: /home/rhensley/Documents/mu2e_UEM_firmware/vivado.log
+# Journal file: /home/rhensley/Documents/mu2e_UEM_firmware/vivado.jou
+#-----------------------------------------------------------
+start_gui
+create_project bft_example /home/rhensley/Documents/bft_example/bft_example -part xc7k70tfbg484-2
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.2/data/ip'.
+set_property target_language VHDL [current_project]
+instantiate_example_design -template xilinx.com:design:bft:1.0  
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1'
+INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1'
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+launch_runs synth_1
+INFO: [HDL 9-2216] Analyzing Verilog file "/home/rhensley/Documents/bft_example/bft_example/bft_example.srcs/sources_1/imports/Sources/FifoBuffer.v" into library work [/home/rhensley/Documents/bft_example/bft_example/bft_example.srcs/sources_1/imports/Sources/FifoBuffer.v:1]
+INFO: [HDL 9-2216] Analyzing Verilog file "/home/rhensley/Documents/bft_example/bft_example/bft_example.srcs/sources_1/imports/Sources/async_fifo.v" into library work [/home/rhensley/Documents/bft_example/bft_example/bft_example.srcs/sources_1/imports/Sources/async_fifo.v:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/rhensley/Documents/bft_example/bft_example/bft_example.srcs/sources_1/imports/Sources/bft.vhdl" into library xil_defaultlib [/home/rhensley/Documents/bft_example/bft_example/bft_example.srcs/sources_1/imports/Sources/bft.vhdl:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/rhensley/Documents/bft_example/bft_example/bft_example.srcs/sources_1/imports/Sources/bftLib/bft_package.vhdl" into library bftLib [/home/rhensley/Documents/bft_example/bft_example/bft_example.srcs/sources_1/imports/Sources/bftLib/bft_package.vhdl:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/rhensley/Documents/bft_example/bft_example/bft_example.srcs/sources_1/imports/Sources/bftLib/core_transform.vhdl" into library bftLib [/home/rhensley/Documents/bft_example/bft_example/bft_example.srcs/sources_1/imports/Sources/bftLib/core_transform.vhdl:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/rhensley/Documents/bft_example/bft_example/bft_example.srcs/sources_1/imports/Sources/bftLib/round_1.vhdl" into library bftLib [/home/rhensley/Documents/bft_example/bft_example/bft_example.srcs/sources_1/imports/Sources/bftLib/round_1.vhdl:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/rhensley/Documents/bft_example/bft_example/bft_example.srcs/sources_1/imports/Sources/bftLib/round_2.vhdl" into library bftLib [/home/rhensley/Documents/bft_example/bft_example/bft_example.srcs/sources_1/imports/Sources/bftLib/round_2.vhdl:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/rhensley/Documents/bft_example/bft_example/bft_example.srcs/sources_1/imports/Sources/bftLib/round_3.vhdl" into library bftLib [/home/rhensley/Documents/bft_example/bft_example/bft_example.srcs/sources_1/imports/Sources/bftLib/round_3.vhdl:1]
+INFO: [HDL 9-1061] Parsing VHDL file "/home/rhensley/Documents/bft_example/bft_example/bft_example.srcs/sources_1/imports/Sources/bftLib/round_4.vhdl" into library bftLib [/home/rhensley/Documents/bft_example/bft_example/bft_example.srcs/sources_1/imports/Sources/bftLib/round_4.vhdl:1]
+[Mon Nov 13 16:51:44 2023] Launched synth_1...
+Run output will be captured here: /home/rhensley/Documents/bft_example/bft_example/bft_example.runs/synth_1/runme.log
+launch_runs impl_1
+[Mon Nov 13 16:52:22 2023] Launched impl_1...
+Run output will be captured here: /home/rhensley/Documents/bft_example/bft_example/bft_example.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+[Mon Nov 13 16:53:02 2023] Launched impl_1...
+Run output will be captured here: /home/rhensley/Documents/bft_example/bft_example/bft_example.runs/impl_1/runme.log
+close_project
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/rhensley/Documents/bft_example/bft_example/bft_example.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov 13 16:53:30 2023...
+open_project /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_null/Debug/monitor_null.elf'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_xaui.elf'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_xaui_fei4.elf'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_fmc164.elf'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_fmc228.elf'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_fmc228_pcie.elf'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_1/firmware/mu2e_1.srcs/sim_1/sim_xaui_tb_behav.wcfg'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_1/firmware/mu2e_1.srcs/sim_1/trigger_in_tb.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_1/firmware/mu2e_1.srcs/sim_1/system_trigger_tb.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/fmc228card1_interface.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/event_amc.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/pins_amc502.xdc'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/timing_null.xdc'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/pins_amc502.xdc'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/timing_amc502.xdc'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/pins_amc502.xdc'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/pins_xaui.xdc'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/timing_amc502_xaui.xdc'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/pins_amc502.xdc'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/pins_xaui.xdc'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/pins_fei4_fmc0.xdc'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/timing_amc502_fei4_xaui.xdc'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/pins_amc502.xdc'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/pins_fmc164.xdc'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/timing_amc502_fmc164.xdc'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/pins_amc502.xdc'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/pins_xaui.xdc'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/pins_fmc228_fmc1.xdc'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/timing_amc502_fmc228.xdc'.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory '/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 6257.910 ; gain = 122.707 ; free physical = 983 ; free virtual = 17878
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+update_files -from_files /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_null/Debug/monitor_null.elf -to_files /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_null/Debug/monitor_null.elf -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_null/Debug/monitor_null.elf' with file '/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_null/Debug/monitor_null.elf'.
+file mkdir /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1
+update_files -from_files /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_fmc228_pcie.elf -to_files /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_fmc228_pcie.elf -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_fmc228_pcie.elf' with file '/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_fmc228_pcie.elf'.
+update_files -from_files /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_amc502_xaui_fei4.elf -to_files /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_xaui_fei4.elf -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_xaui_fei4.elf' with file '/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_amc502_xaui_fei4.elf'.
+update_files -from_files /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_amc502_xaui.elf -to_files /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_xaui.elf -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_xaui.elf' with file '/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_amc502_xaui.elf'.
+update_files -from_files /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_amc502_fmc228.elf -to_files /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_fmc228.elf -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_fmc228.elf' with file '/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_amc502_fmc228.elf'.
+update_files -from_files /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_amc502_fmc164.elf -to_files /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_fmc164.elf -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_fmc164.elf' with file '/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_amc502_fmc164.elf'.
+WARNING: [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.
+update_files -from_files /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/constrs_1/pins_amc502.xdc -to_files /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/pins_amc502.xdc -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/pins_amc502.xdc' with file '/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/constrs_1/pins_amc502.xdc'.
+INFO: [filemgmt 20-762] Replacing file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/pins_amc502.xdc' with file '/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/constrs_1/pins_amc502.xdc'.
+INFO: [filemgmt 20-762] Replacing file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/pins_amc502.xdc' with file '/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/constrs_1/pins_amc502.xdc'.
+INFO: [filemgmt 20-762] Replacing file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/pins_amc502.xdc' with file '/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/constrs_1/pins_amc502.xdc'.
+INFO: [filemgmt 20-762] Replacing file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/pins_amc502.xdc' with file '/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/constrs_1/pins_amc502.xdc'.
+INFO: [filemgmt 20-762] Replacing file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/pins_amc502.xdc' with file '/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/constrs_1/pins_amc502.xdc'.
+update_files -from_files /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/constrs_fmc228_pcie/imports/constrs_1/pins_fmc228_fmc1.xdc -to_files /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/pins_fmc228_fmc1.xdc -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/pins_fmc228_fmc1.xdc' with file '/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/constrs_fmc228_pcie/imports/constrs_1/pins_fmc228_fmc1.xdc'.
+update_files -from_files /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/event_amc.vhd -to_files /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/event_amc.vhd -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/event_amc.vhd' with file '/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/event_amc.vhd'.
+update_files -from_files /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/fmc228card1_interface.vhd -to_files /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/fmc228card1_interface.vhd -filesets [get_filesets *]
+INFO: [filemgmt 20-762] Replacing file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/fmc228card1_interface.vhd' with file '/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/fmc228card1_interface.vhd'.
+reset_run synth_1
+launch_runs synth_1
+[Mon Nov 13 17:42:41 2023] Launched synth_1...
+Run output will be captured here: /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.runs/synth_1/runme.log
+launch_runs impl_1
+[Mon Nov 13 17:44:49 2023] Launched impl_1...
+Run output will be captured here: /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+[Mon Nov 13 17:49:49 2023] Launched impl_1...
+Run output will be captured here: /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.runs/impl_1/runme.log
+close_project
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Mon Nov 13 17:53:15 2023...

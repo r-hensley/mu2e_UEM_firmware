@@ -41,8 +41,9 @@ architecture Behavioral of adc_stream_buffer_testbend is
                port(
                rst : in std_logic;
                clk : in std_logic
- 
-                     );
+               );
+         end component adc_buffer_streamer;
+               
          signal rst : std_logic := '0';
          signal clk : std_logic := '0';            
 
@@ -53,7 +54,7 @@ begin
                                       
    process 
        begin
-       clk = '0';
+       clk <= '0';
        wait for 5 ns;
        clk <= not clk;
    end process;

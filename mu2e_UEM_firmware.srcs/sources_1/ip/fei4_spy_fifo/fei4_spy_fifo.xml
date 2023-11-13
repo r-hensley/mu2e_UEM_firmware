@@ -1472,10 +1472,6 @@
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
-            <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Wed Sep 13 22:55:18 UTC 2023</spirit:value>
-          </spirit:parameter>
-          <spirit:parameter>
             <spirit:name>boundaryCRC</spirit:name>
             <spirit:value>85ca8219</spirit:value>
           </spirit:parameter>

@@ -6,25 +6,21 @@
 # Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
 # 
 
-echo "This script was generated under a different operating system."
-echo "Please update the PATH and LD_LIBRARY_PATH variables below, before executing this script"
-exit
-
 if [ -z "$PATH" ]; then
-  PATH=C:/Xilinx/SDK/2016.2/bin;C:/Xilinx/Vivado/2016.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2016.2/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2016.2/bin
+  PATH=/opt/Xilinx/Vivado/2016.2/ids_lite/ISE/bin/lin64:/opt/Xilinx/Vivado/2016.2/bin
 else
-  PATH=C:/Xilinx/SDK/2016.2/bin;C:/Xilinx/Vivado/2016.2/ids_lite/ISE/bin/nt64;C:/Xilinx/Vivado/2016.2/ids_lite/ISE/lib/nt64:C:/Xilinx/Vivado/2016.2/bin:$PATH
+  PATH=/opt/Xilinx/Vivado/2016.2/ids_lite/ISE/bin/lin64:/opt/Xilinx/Vivado/2016.2/bin:$PATH
 fi
 export PATH
 
 if [ -z "$LD_LIBRARY_PATH" ]; then
-  LD_LIBRARY_PATH=
+  LD_LIBRARY_PATH=/opt/Xilinx/Vivado/2016.2/ids_lite/ISE/lib/lin64
 else
-  LD_LIBRARY_PATH=:$LD_LIBRARY_PATH
+  LD_LIBRARY_PATH=/opt/Xilinx/Vivado/2016.2/ids_lite/ISE/lib/lin64:$LD_LIBRARY_PATH
 fi
 export LD_LIBRARY_PATH
 
-HD_PWD='C:/Users/ericp/Xilinx/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.runs/fei4_pixel_fifo_synth_1'
+HD_PWD='/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.runs/fei4_pixel_fifo_synth_1'
 cd "$HD_PWD"
 
 HD_LOG=runme.log

@@ -1,0 +1,888 @@
+/*
+
+Vivado v2016.2 (64-bit)
+SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+Process ID: 406649
+
+Current time: 	11/13/23 4:49:52 PM CST
+Time zone: 	Central Standard Time (America/Chicago)
+
+OS: AlmaLinux release 9.3 (Shamrock Pampas Cat)
+Version: 5.14.0-284.30.1.el9_2.x86_64
+Architecture: amd64
+Available processors (cores): 8
+
+DISPLAY: :0
+Screen size: 1920x1200
+Screen resolution (DPI): 96
+Available screens: 1
+Default font: family=Dialog,name=Dialog,style=plain,size=12
+
+Java version: 	1.8.0_66 64-bit
+Java home: 	/opt/Xilinx/Vivado/2016.2/tps/lnx64/jre
+
+User name: 	rhensley
+User home directory: /home/rhensley
+User working directory: /home/rhensley/Documents/mu2e_UEM_firmware
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI Base root directory: /opt/Xilinx/Vivado
+RDI Data directory: /opt/Xilinx/Vivado/2016.2/data
+RDI Bin directory: /opt/Xilinx/Vivado/2016.2/bin
+
+Vivado preferences path: /home/rhensley/.Xilinx/Vivado/2016.2/vivado.ini
+Vivado layouts directory: /home/rhensley/.Xilinx/Vivado/2016.2/layouts
+
+GUI allocated memory:	193 MB
+GUI max memory:		3,052 MB
+Engine allocated memory: 795 MB
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// [GUI Memory]: 32 MB (+31302kb) [00:00:04]
+// [Engine Memory]: 795 MB (+682056kb) [00:00:04]
+// HMemoryUtils.trashcanNow. Engine heap size: 800 MB. GUI used memory: 21 MB. Current time: 11/13/23 4:49:54 PM CST
+selectButton(PAResourceEtoH.GettingStartedView_CREATE_NEW_PROJECT, "Create New Project"); // l:JideButton (JPanel:JComponent, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// [GUI Memory]: 37 MB (+3177kb) [00:00:54]
+// [GUI Memory]: 44 MB (+5950kb) [00:00:54]
+// [Engine Memory]: 854 MB (+20544kb) [00:00:55]
+// h:g (cv:JFrame): New Project: addNotify
+// HMemoryUtils.trashcanNow. Engine heap size: 875 MB. GUI used memory: 23 MB. Current time: 11/13/23 4:50:44 PM CST
+selectButton("CANCEL", "Cancel"); // JButton:AbstractButton (ButtonPanel:JPanel, h:g)
+dismissDialog("New Project"); // h:g (cv:JFrame)
+selectButton(PAResourceEtoH.GettingStartedView_OPEN_EXAMPLE_PROJECT, "Open Example Project"); // l:JideButton (JPanel:JComponent, cv:JFrame)
+// a:h (cv:JFrame): Open Example Project: addNotify
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, a:h)
+selectTree(PAResourceItoN.NewProjectWizard_PROJECT_TEMPLATE_TREE, "[Designs, Base Zynq]", 1, false); // k:JTree (JViewport:JComponent, a:h)
+selectTree(PAResourceItoN.NewProjectWizard_PROJECT_TEMPLATE_TREE, "[Designs, BFT]", 2, false); // k:JTree (JViewport:JComponent, a:h)
+selectTree(PAResourceItoN.NewProjectWizard_PROJECT_TEMPLATE_TREE, "[Designs, Configurable Microblaze Design]", 3, false); // k:JTree (JViewport:JComponent, a:h)
+selectTree(PAResourceItoN.NewProjectWizard_PROJECT_TEMPLATE_TREE, "[Designs, CPU (HDL)]", 4, false); // k:JTree (JViewport:JComponent, a:h)
+selectTree(PAResourceItoN.NewProjectWizard_PROJECT_TEMPLATE_TREE, "[Designs, CPU (Synthesized)]", 5, false); // k:JTree (JViewport:JComponent, a:h)
+selectTree(PAResourceItoN.NewProjectWizard_PROJECT_TEMPLATE_TREE, "[Designs, Wavegen (HDL)]", 6, false); // k:JTree (JViewport:JComponent, a:h)
+selectTree(PAResourceItoN.NewProjectWizard_PROJECT_TEMPLATE_TREE, "[Designs, BFT]", 2, false); // k:JTree (JViewport:JComponent, a:h)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, a:h)
+selectButton("BACK", "< Back"); // JButton:AbstractButton (ButtonPanel:JPanel, a:h)
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, a:h)
+setText(PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, "/home/rhensley/Documents/bft"); // aq:ao (ap:JPanel, a:h)
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "bft_example"); // ao:JTextField (JPanel:JComponent, a:h)
+setText(PAResourceOtoP.ProjectNameChooser_CHOOSE_PROJECT_LOCATION, "/home/rhensley/Documents/bft_example"); // aq:ao (ap:JPanel, a:h)
+// [GUI Memory]: 49 MB (+2671kb) [00:01:31]
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, a:h)
+// TclEventType: CED_RESET_GUI_ELEMENT
+// TclEventType: CED_UPDATE_GUI_ELEMENT
+selectButton("NEXT", "Next >"); // JButton:AbstractButton (ButtonPanel:JPanel, a:h)
+// bL:g (a:h):  Create Project : addNotify
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 919 MB (+22879kb) [00:01:37]
+// [GUI Memory]: 57 MB (+5247kb) [00:01:37]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: create_project bft_example /home/rhensley/Documents/bft_example/bft_example -part xc7k70tfbg484-2 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: PROJECT_CHANGE
+// Tcl Message: set_property target_language VHDL [current_project] 
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: CED_RESET_GUI_ELEMENT
+// TclEventType: CED_UPDATE_GUI_ELEMENT
+// Tcl Message: instantiate_example_design -template xilinx.com:design:bft:1.0   
+// Tcl Message: INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sim_1' INFO: [filemgmt 20-348] Importing the appropriate files for fileset: 'sources_1' 
+selectButton("FINISH", "Finish"); // JButton:AbstractButton (ButtonPanel:JPanel, a:h)
+dismissDialog("Create Project"); // bL:g (a:h)
+dismissDialog("Open Example Project"); // a:h (cv:JFrame)
+// [GUI Memory]: 65 MB (+5341kb) [00:01:39]
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bft - aBFT (bft.vhdl)]", 1, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, bft - aBFT (bft.vhdl)]", 1, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 959 MB. GUI used memory: 31 MB. Current time: 11/13/23 4:51:30 PM CST
+// Elapsed time: 15 seconds
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 
+// Tcl Message: [Mon Nov 13 16:51:44 2023] Launched synth_1... Run output will be captured here: /home/rhensley/Documents/bft_example/bft_example/bft_example.runs/synth_1/runme.log 
+// [GUI Memory]: 69 MB (+1095kb) [00:01:56]
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// [Engine Memory]: 970 MB (+5855kb) [00:02:01]
+selectButton("PAResourceQtoS.RunRun_TASK_ALREADY_RUNNING_WOULD_YOU_LIKE_Cancel", "Cancel"); // JButton:AbstractButton (JPanel:JComponent, T:JDialog)
+// Elapsed time: 11 seconds
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+// Elapsed time: 16 seconds
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// [GUI Memory]: 73 MB (+252kb) [00:02:32]
+// ap:G (cv:JFrame): Synthesis Completed: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:G)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 
+// Tcl Message: [Mon Nov 13 16:52:22 2023] Launched impl_1... Run output will be captured here: /home/rhensley/Documents/bft_example/bft_example/bft_example.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,004 MB. GUI used memory: 33 MB. Current time: 11/13/23 4:52:25 PM CST
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// [GUI Memory]: 77 MB (+1109kb) [00:03:12]
+// ap:G (cv:JFrame): Implementation Completed: addNotify
+// Elapsed time: 39 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a:JRadioButton (JPanel:JComponent, ap:G)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:G)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Implementation Completed"); // ap:G (cv:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Mon Nov 13 16:53:02 2023] Launched impl_1... Run output will be captured here: /home/rhensley/Documents/bft_example/bft_example/bft_example.runs/impl_1/runme.log 
+// TclEventType: RUN_COMPLETED
+// ap:G (cv:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 19 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ap:G)
+dismissDialog("Bitstream Generation Completed"); // ap:G (cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenuItem(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.xpr"); // af:JMenuItem (JPopupMenu:JComponent, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,008 MB. GUI used memory: 33 MB. Current time: 11/13/23 4:53:30 PM CST
+// bL:g (cv:JFrame):  Open Project : addNotify
+// Opening Vivado Project: /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.xpr. Version: Vivado v2016.2 
+selectButton("PAResourceOtoP.PABaseTab_WOULD_YOU_LIKE_TO_CLOSE_CURRENTLY_Yes", "Yes"); // JButton:AbstractButton (JPanel:JComponent, T:JDialog)
+// Tcl Message: close_project 
+// Tcl Message: ****** Webtalk v2016.2 (64-bit)   **** SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016   **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.  source /home/rhensley/Documents/bft_example/bft_example/bft_example.hw/webtalk/labtool_webtalk.tcl -notrace INFO: [Common 17-206] Exiting Webtalk at Mon Nov 13 16:53:30 2023... 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_FAILED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 84 MB (+3308kb) [00:03:45]
+// [GUI Memory]: 95 MB (+6137kb) [00:03:45]
+// [Engine Memory]: 1,022 MB (+3078kb) [00:03:45]
+// [GUI Memory]: 102 MB (+2664kb) [00:03:45]
+// [Engine Memory]: 1,079 MB (+6097kb) [00:03:45]
+// [GUI Memory]: 108 MB (+695kb) [00:03:45]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: open_project /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.2/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// [Engine Memory]: 1,135 MB (+2428kb) [00:03:47]
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Project name: mu2e_UEM_firmware; location: /home/rhensley/Documents/mu2e_UEM_firmware; part: xc7k420tffg1156-2
+// Tcl Message: open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:05 . Memory (MB): peak = 6257.910 ; gain = 122.707 ; free physical = 983 ; free virtual = 17878 
+dismissDialog("Open Project"); // bL:g (cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// a:a (cv:JFrame): Critical Messages: addNotify
+// [GUI Memory]: 114 MB (+593kb) [00:03:50]
+// Elapsed time: 14 seconds
+selectButton(PAResourceAtoD.CmdMsgDialog_OPEN_MESSAGES_VIEW, "Open Messages View"); // a:JButton (JPanel:JComponent, a:a)
+// Run Command: PAResourceCommand.PACommandNames_MESSAGE_WINDOW
+dismissDialog("Critical Messages"); // a:a (cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_project /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.xpr. , [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_null/Debug/monitor_null.elf'.. ]", 2, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_project /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.xpr. , [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_null/Debug/monitor_null.elf'.. ]", 2, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_project /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.xpr. , [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_null/Debug/monitor_null.elf'.. , [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_xaui_fei4.elf'.. ]", 4, false, false, false, false, false, true); // al:k (JViewport:JComponent, cv:JFrame) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_project /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.xpr. , [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_null/Debug/monitor_null.elf'.. , [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_xaui.elf'.. ]", 3, false); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_project /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.xpr. , [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_null/Debug/monitor_null.elf'.. , [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_xaui.elf'.. ]", 3, false, false, false, false, false, true); // al:k (JViewport:JComponent, cv:JFrame) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_project /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.xpr. , [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_null/Debug/monitor_null.elf'.. , [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_xaui.elf'.. ]", 3, false); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_project /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.xpr. , [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_null/Debug/monitor_null.elf'.. , [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_xaui.elf'.. ]", 3, false); // al:k (JViewport:JComponent, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELF]", 19); // z:k (G:JPanel, cv:JFrame)
+// Elapsed time: 16 seconds
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 26); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_fmc228_pcie]", 27); // z:k (G:JPanel, cv:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_fmc228_pcie]", 27); // z:k (G:JPanel, cv:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints]", 26); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources]", 27); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1]", 28); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files]", 29); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files, adc_stream_buffer_testbend.vhd]", 30, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files, adc_stream_buffer_testbend.vhd]", 30, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// [GUI Memory]: 120 MB (+745kb) [00:04:41]
+selectCodeEditor("adc_stream_buffer_testbend.vhd", 106, 278); // bH:N (JPanel:JComponent, cv:JFrame)
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D:b
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files, add8_tb.vhd]", 31, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Non-module Files]", 32, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files, add8_tb.vhd]", 31, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation Sources, sim_1, Syntax Error Files, add8_tb.vhd]", 31, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D:b
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELF, monitor_null.elf]", 25, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELF, monitor_null.elf]", 25, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// ab:y (cv:JFrame): Unable to Open File: addNotify
+selectButton(PAResourceOtoP.OpenFileAction_OK, "OK"); // a:JButton (JPanel:JComponent, ab:y)
+dismissDialog("Unable to Open File"); // ab:y (cv:JFrame)
+// [GUI Memory]: 127 MB (+1328kb) [00:05:08]
+// Elapsed time: 36 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELF, monitor_null.elf]", 25, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Source File Properties..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELF, monitor_null.elf]", 25, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER, "Project Manager"); // af:JMenuItem (JPopupMenu:JComponent, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+// Elapsed time: 19 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELF, monitor_fmc228_pcie.elf]", 24, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELF, monitor_null.elf]", 25, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELF, monitor_fmc228_pcie.elf]", 24, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELF, monitor_null.elf]", 25, false); // z:k (G:JPanel, cv:JFrame)
+// Elapsed time: 36 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELF, monitor_null.elf]", 25, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+// [GUI Memory]: 134 MB (+782kb) [00:06:46]
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER, "Project Manager"); // af:JMenuItem (JPopupMenu:JComponent, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Project Settings]", 1, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROJECT_SETTINGS
+// Project Settings: addNotify
+selectButton("Simulation", "Simulation"); // JideButton:JButton (ScrollableButtonPanel:ButtonPanel, k:aP)
+selectButton("IP", "IP"); // JideButton:JButton (ScrollableButtonPanel:ButtonPanel, k:aP)
+selectButton("CANCEL", "Cancel"); // JButton:AbstractButton (ButtonPanel:JPanel, k:aP)
+dismissDialog("Project Settings"); // k:aP (cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Add Sources]", 2, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cv:JFrame): Add Sources: addNotify
+selectButton("CANCEL", "Cancel"); // JButton:AbstractButton (ButtonPanel:JPanel, b:g)
+dismissDialog("Add Sources"); // b:g (cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Project Settings]", 1, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROJECT_SETTINGS
+// Project Settings: addNotify
+// Run Command: PAResourceCommand.PACommandNames_PROJECT_SETTINGS
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager, Project Settings]", 1, false, false, false, false, false, true); // x:Y (w:G, cv:JFrame) - Double Click
+// Elapsed time: 12 seconds
+selectButton("Simulation", "Simulation"); // JideButton:JButton (ScrollableButtonPanel:ButtonPanel, k:aP)
+selectTab(PAResourceOtoP.ProjectSettingsSimulationPanel_TABBED_PANE, PAResourceOtoP.ProjectSettingsSimulationPanel_ELABORATION, "Elaboration", 1); // g:JideTabbedPane (JPanel:JComponent, k:aP)
+selectTab(PAResourceOtoP.ProjectSettingsSimulationPanel_TABBED_PANE, PAResourceOtoP.ProjectSettingsSimulationPanel_NETLIST, "Elaboration", 3); // g:JideTabbedPane (JPanel:JComponent, k:aP)
+selectTab(PAResourceOtoP.ProjectSettingsSimulationPanel_TABBED_PANE, PAResourceOtoP.ProjectSettingsSimulationPanel_NETLIST, "Netlist", 3); // g:JideTabbedPane (JPanel:JComponent, k:aP)
+selectTab(PAResourceOtoP.ProjectSettingsSimulationPanel_TABBED_PANE, PAResourceOtoP.ProjectSettingsSimulationPanel_ADVANCED, "Advanced", 4); // g:JideTabbedPane (JPanel:JComponent, k:aP)
+selectTab(PAResourceOtoP.ProjectSettingsSimulationPanel_TABBED_PANE, PAResourceOtoP.ProjectSettingsSimulationPanel_SIMULATION, "Simulation", 2); // g:JideTabbedPane (JPanel:JComponent, k:aP)
+selectTab(PAResourceOtoP.ProjectSettingsSimulationPanel_TABBED_PANE, PAResourceOtoP.ProjectSettingsSimulationPanel_ELABORATION, "Elaboration", 1); // g:JideTabbedPane (JPanel:JComponent, k:aP)
+selectTab(PAResourceOtoP.ProjectSettingsSimulationPanel_TABBED_PANE, PAResourceOtoP.ProjectSettingsSimulationPanel_COMPILATION, "Compilation", 0); // g:JideTabbedPane (JPanel:JComponent, k:aP)
+selectButton("Elaboration", "Elaboration"); // JideButton:JButton (ScrollableButtonPanel:ButtonPanel, k:aP)
+selectButton("Synthesis", "Synthesis"); // JideButton:JButton (ScrollableButtonPanel:ButtonPanel, k:aP)
+selectButton("Implementation", "Implementation"); // JideButton:JButton (ScrollableButtonPanel:ButtonPanel, k:aP)
+selectButton("Bitstream", "Bitstream"); // JideButton:JButton (ScrollableButtonPanel:ButtonPanel, k:aP)
+selectButton("IP", "IP"); // JideButton:JButton (ScrollableButtonPanel:ButtonPanel, k:aP)
+selectTab(PAResourceOtoP.ProjectSettingsIPPage_TABBED_PANE, PAResourceOtoP.ProjectSettingsIPPage_REPOSITORY_MANAGER, "Repository Manager", 1); // g:JideTabbedPane (z:bc, k:aP)
+selectTab(PAResourceOtoP.ProjectSettingsIPPage_TABBED_PANE, PAResourceOtoP.ProjectSettingsIPPage_PACKAGER, "Packager", 2); // g:JideTabbedPane (z:bc, k:aP)
+selectButton("General", "General"); // JideButton:JButton (ScrollableButtonPanel:ButtonPanel, k:aP)
+dismissDialog("Project Settings"); // k:aP (cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER, "Project Manager"); // af:JMenuItem (JPopupMenu:JComponent, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_GOTO_PROJECT_MANAGER
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // x:Y (w:G, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true, false, false, false, false, true); // x:Y (w:G, cv:JFrame) - Double Click - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // x:Y (w:G, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Project Manager]", 0, true); // x:Y (w:G, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELF, monitor_null.elf]", 25, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+// Elapsed time: 31 seconds
+setFileChooser("/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_null/Debug/monitor_null.elf");
+// 'dw' command handler elapsed time: 30 seconds
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_files -from_files /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_null/Debug/monitor_null.elf -to_files /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_null/Debug/monitor_null.elf -filesets [get_filesets *] 
+// Tcl Message: INFO: [filemgmt 20-762] Replacing file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_null/Debug/monitor_null.elf' with file '/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_null/Debug/monitor_null.elf'. 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELF, monitor_null.elf]", 25, false); // z:k (G:JPanel, cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// [GUI Memory]: 144 MB (+2476kb) [00:08:19]
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELF]", 19, true, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_CONSTRAINT_SETS, "Edit Constraints Sets..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_CONSTRAINT_SETS
+// ak:x (cv:JFrame): Edit Constraints Sets: addNotify
+selectComboBox(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES_BELOW_TO_THIS_CONSTRAINT_SET, "constrs_1", 0); // B:e (JPanel:JComponent, ak:x)
+selectComboBox(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES_BELOW_TO_THIS_CONSTRAINT_SET, "constrs_amc502", 1); // B:e (JPanel:JComponent, ak:x)
+selectComboBox(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES_BELOW_TO_THIS_CONSTRAINT_SET, "constrs_amc502_fei4_xaui", 2); // B:e (JPanel:JComponent, ak:x)
+// Tcl Command: 'file mkdir /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1'
+// Tcl Message: file mkdir /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1 
+selectComboBox(PAResourceAtoD.ConstraintsChooserPanel_ADD_FILES_BELOW_TO_THIS_CONSTRAINT_SET, "constrs_amc502_fmc228", 4); // B:e (JPanel:JComponent, ak:x)
+// 'aj' command handler elapsed time: 11 seconds
+dismissDialog("Edit Constraints Sets"); // ak:x (cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELF]", 19, true, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_EDIT_SIMULATION_SETS, "Edit Simulation Sets..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_EDIT_SIMULATION_SETS
+// ao:b (cv:JFrame): Add Sources: addNotify
+selectComboBox(PAResourceQtoS.SrcChooserPanel_ADD_FILES_BELOW_TO_THIS_SIMULATION_SET, "Create Simulation Set...", 1); // by:a (JPanel:JComponent, ao:b)
+// 'an' command handler elapsed time: 3 seconds
+dismissDialog("Add Sources"); // ao:b (cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELF]", 19, true, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger - Node
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_ADD_SOURCES, "Add Sources..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ADD_SOURCES
+// b:g (cv:JFrame): Add Sources: addNotify
+// 'h' command handler elapsed time: 3 seconds
+dismissDialog("Add Sources"); // b:g (cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELF, monitor_fmc228_pcie.elf]", 24, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenuItem(RDIResourceCommand.RDICommands_PROPERTIES, "Source File Properties..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: RDIResourceCommand.RDICommands_PROPERTIES
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELF, monitor_fmc228_pcie.elf]", 24, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_ELF_FILE_ASSOCIATION, "Associate ELF Files..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_ELF_FILE_ASSOCIATION
+selectButton("PAResourceEtoH.ElfFileAssociation_THERE_FILES_THAT_NEED_GENERATION_Cancel", "Cancel"); // JButton:AbstractButton (JPanel:JComponent, T:JDialog)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELF, monitor_fmc228_pcie.elf]", 24, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceQtoS.SrcMenu_IP_HIERARCHY, "IP Hierarchy"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_AUTO_UPDATE_HIER, "Hierarchy Update"); // ab:JMenu (am:JPopupMenu, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+// Elapsed time: 18 seconds
+setFileChooser("/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_fmc228_pcie.elf");
+// 'dw' command handler elapsed time: 18 seconds
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_files -from_files /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_fmc228_pcie.elf -to_files /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_fmc228_pcie.elf -filesets [get_filesets *] 
+// Tcl Message: INFO: [filemgmt 20-762] Replacing file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_fmc228_pcie.elf' with file '/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_fmc228_pcie.elf'. 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELF, monitor_amc502_xaui_fei4.elf]", 23, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+setFileChooser("/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_amc502_xaui_fei4.elf");
+// 'dw' command handler elapsed time: 9 seconds
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_files -from_files /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_amc502_xaui_fei4.elf -to_files /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_xaui_fei4.elf -filesets [get_filesets *] 
+// Tcl Message: INFO: [filemgmt 20-762] Replacing file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_xaui_fei4.elf' with file '/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_amc502_xaui_fei4.elf'. 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELF, monitor_amc502_xaui.elf]", 22, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+setFileChooser("/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_amc502_xaui.elf");
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_files -from_files /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_amc502_xaui.elf -to_files /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_xaui.elf -filesets [get_filesets *] 
+// Tcl Message: INFO: [filemgmt 20-762] Replacing file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_xaui.elf' with file '/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_amc502_xaui.elf'. 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELF, monitor_amc502_fmc228.elf]", 21, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+setFileChooser("/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_amc502_fmc228.elf");
+// 'dw' command handler elapsed time: 4 seconds
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_files -from_files /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_amc502_fmc228.elf -to_files /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_fmc228.elf -filesets [get_filesets *] 
+// Tcl Message: INFO: [filemgmt 20-762] Replacing file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_fmc228.elf' with file '/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_amc502_fmc228.elf'. 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, ELF, monitor_amc502_fmc164.elf]", 20, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+setFileChooser("/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_amc502_fmc164.elf");
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_files -from_files /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_amc502_fmc164.elf -to_files /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_fmc164.elf -filesets [get_filesets *] 
+// Tcl Message: INFO: [filemgmt 20-762] Replacing file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_fmc164.elf' with file '/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_amc502_fmc164.elf'. 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, xaui_0 (xaui_0.xci)]", 9); // z:k (G:JPanel, cv:JFrame)
+// G:be (cv:JFrame): Show IP Hierarchy: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:be)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // G:be (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fei4_pixel_fifo (fei4_pixel_fifo.xci)]", 10); // z:k (G:JPanel, cv:JFrame)
+// G:be (cv:JFrame): Show IP Hierarchy: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:be)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // G:be (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// HMemoryUtils.trashcanNow. Engine heap size: 1,179 MB. GUI used memory: 69 MB. Current time: 11/13/23 5:00:20 PM CST
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fei4_pixel_fifo (fei4_pixel_fifo.xci), fei4_pixel_fifo - fei4_pixel_fifo_arch (fei4_pixel_fifo.vhd)]", 3); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, xaui_0 (xaui_0.xci), xaui_0 - wrapper (xaui_0.vhd)]", 6); // z:k (G:JPanel, cv:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, xaui_0 (xaui_0.xci)]", 5); // z:k (G:JPanel, cv:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fei4_pixel_fifo (fei4_pixel_fifo.xci)]", 2); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_fmc228_pcie - behavioral (top_fmc228_pcie.vhd)]", 1); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_fmc228_pcie - behavioral (top_fmc228_pcie.vhd), mcs_imp - microblaze_mcs_0 (microblaze_mcs_0.xci)]", 2); // z:k (G:JPanel, cv:JFrame)
+// G:be (cv:JFrame): Show IP Hierarchy: addNotify
+selectCheckBox(RDIResource.MessageWithOptionDialog_DONT_SHOW_THIS_DIALOG_AGAIN, "Don't show this dialog again", true); // h:JCheckBox (JPanel:JComponent, G:be): TRUE
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:be)
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Show IP Hierarchy"); // G:be (cv:JFrame)
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_fmc228_pcie - behavioral (top_fmc228_pcie.vhd), mcs_imp - microblaze_mcs_0 (microblaze_mcs_0.xci), microblaze_mcs_0 - microblaze_mcs_0_arch (microblaze_mcs_0.vhd)]", 3); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_fmc228_pcie - behavioral (top_fmc228_pcie.vhd), mcs_imp - microblaze_mcs_0 (microblaze_mcs_0.xci), microblaze_mcs_0 - microblaze_mcs_0_arch (microblaze_mcs_0.vhd), U0 - bd_fc5c (bd_fc5c.bd)]", 4, false); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_fmc228_pcie - behavioral (top_fmc228_pcie.vhd), pcs_pma - gig_ethernet_pcs_pma_0 (gig_ethernet_pcs_pma_0.xci)]", 5); // z:k (G:JPanel, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_fmc228_pcie - behavioral (top_fmc228_pcie.vhd), pcs_pma - gig_ethernet_pcs_pma_0 (gig_ethernet_pcs_pma_0.xci), gig_ethernet_pcs_pma_0 - wrapper (gig_ethernet_pcs_pma_0.vhd)]", 6); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_fmc228_pcie - behavioral (top_fmc228_pcie.vhd), pcs_pma - gig_ethernet_pcs_pma_0 (gig_ethernet_pcs_pma_0.xci), gig_ethernet_pcs_pma_0 - wrapper (gig_ethernet_pcs_pma_0.vhd), U0 - gig_ethernet_pcs_pma_0_support - wrapper (gig_ethernet_pcs_pma_0_support.vhd)]", 7); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_fmc228_pcie - behavioral (top_fmc228_pcie.vhd), pcs_pma - gig_ethernet_pcs_pma_0 (gig_ethernet_pcs_pma_0.xci), gig_ethernet_pcs_pma_0 - wrapper (gig_ethernet_pcs_pma_0.vhd), U0 - gig_ethernet_pcs_pma_0_support - wrapper (gig_ethernet_pcs_pma_0_support.vhd), pcs_pma_block_i - gig_ethernet_pcs_pma_0_block - block_level (gig_ethernet_pcs_pma_0_block.vhd)]", 8); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_fmc228_pcie - behavioral (top_fmc228_pcie.vhd), pcs_pma - gig_ethernet_pcs_pma_0 (gig_ethernet_pcs_pma_0.xci), gig_ethernet_pcs_pma_0 - wrapper (gig_ethernet_pcs_pma_0.vhd), U0 - gig_ethernet_pcs_pma_0_support - wrapper (gig_ethernet_pcs_pma_0_support.vhd), pcs_pma_block_i - gig_ethernet_pcs_pma_0_block - block_level (gig_ethernet_pcs_pma_0_block.vhd), transceiver_inst - gig_ethernet_pcs_pma_0_transceiver - wrapper (gig_ethernet_pcs_pma_0_transceiver.vhd)]", 10); // z:k (G:JPanel, cv:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_fmc228_pcie - behavioral (top_fmc228_pcie.vhd), pcs_pma - gig_ethernet_pcs_pma_0 (gig_ethernet_pcs_pma_0.xci)]", 5); // z:k (G:JPanel, cv:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_fmc228_pcie - behavioral (top_fmc228_pcie.vhd)]", 1); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, peakhigh_module - Behavioral (peakhigh_module.vhd)]", 9); // z:k (G:JPanel, cv:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, peakhigh_module - Behavioral (peakhigh_module.vhd)]", 9); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fmc164_interface - RTL (fmc164_interface.vhd)]", 8); // z:k (G:JPanel, cv:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, fmc164_interface - RTL (fmc164_interface.vhd)]", 8); // z:k (G:JPanel, cv:JFrame)
+expandTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, link_interface - RTL (link_interface.vhd)]", 7); // z:k (G:JPanel, cv:JFrame)
+collapseTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, link_interface - RTL (link_interface.vhd)]", 7); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_project /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.xpr. , [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_null/Debug/monitor_null.elf'.. , [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/timing_amc502_fmc228.xdc'.. ]", 30, false); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_project /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.xpr. , [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_null/Debug/monitor_null.elf'.. , [Project 1-19] Could not find the file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/pins_amc502.xdc'.. ]", 13, false); // al:k (JViewport:JComponent, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORT, "Report"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_REPORT, "Report"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenu(RDIResourceCommand.RDICommands_CUSTOM_COMMANDS, "Customize Commands"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_PROJECT_SETTINGS, "Project Settings..."); // af:JMenuItem (JPopupMenu:JComponent, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_PROJECT_SETTINGS
+// Project Settings: addNotify
+selectButton("Simulation", "Simulation"); // JideButton:JButton (ScrollableButtonPanel:ButtonPanel, k:aP)
+selectButton("Elaboration", "Elaboration"); // JideButton:JButton (ScrollableButtonPanel:ButtonPanel, k:aP)
+dismissDialog("Project Settings"); // k:aP (cv:JFrame)
+selectMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(RDIResource.MainWinMenuMgr_LAYOUT, "Layout"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_WINDOW, "Window"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // V:JideMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenu(PAResourceCommand.PACommandNames_SIMULATION_RUN, "Run Simulation"); // V:JideMenu (JPopupMenu:JComponent, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectButton(PAResourceEtoH.FileSetPanel_0_CRITICAL_WARNING, "5 critical warnings"); // i:l (CommandBar:DockableBar, cv:JFrame)
+selectButton(PAResourceEtoH.FileSetPanel_0_WARNING, "2 warnings"); // i:l (CommandBar:DockableBar, cv:JFrame)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // g:JideTabbedPane (N:aK, cv:JFrame)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 2); // g:JideTabbedPane (N:aK, cv:JFrame)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Compile Order", 3); // g:JideTabbedPane (N:aK, cv:JFrame)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 2); // g:JideTabbedPane (N:aK, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_amc502_fmc228, pins_amc502.xdc]", 182, false); // z:k (G:JPanel, cv:JFrame)
+selectCheckBox(PAResourceQtoS.SrcFilePropPanels_SYNTHESIS, "Synthesis", false); // h:JCheckBox (JPanel:JComponent, cv:JFrame): FALSE
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_amc502_fmc228, pins_amc502.xdc]", 182, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+// Elapsed time: 11 seconds
+setFileChooser("/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/constrs_1/pins_amc502.xdc");
+// 'dw' command handler elapsed time: 11 seconds
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_files -from_files /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/constrs_1/pins_amc502.xdc -to_files /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/pins_amc502.xdc -filesets [get_filesets *] 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_amc502_fmc228, pins_xaui.xdc]", 178, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+// Elapsed time: 16 seconds
+dismissFileChooser();
+// 'dw' command handler elapsed time: 16 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_amc502_fmc228, pins_fmc228_fmc1.xdc]", 179, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_amc502_fmc228, pins_amc502.xdc]", 177, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_amc502_fmc228, pins_xaui.xdc]", 178, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_amc502_fmc228, pins_fmc228_fmc1.xdc]", 179, false); // z:k (G:JPanel, cv:JFrame)
+// Elapsed time: 41 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_amc502_fmc228, pins_fmc228_fmc1.xdc]", 179, false); // z:k (G:JPanel, cv:JFrame)
+// Elapsed time: 57 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_amc502_fmc228, pins_fmc228_fmc1.xdc]", 179, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+// Elapsed time: 10 seconds
+setFileChooser("/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/constrs_fmc228_pcie/imports/constrs_1/pins_fmc228_fmc1.xdc");
+// 'dw' command handler elapsed time: 9 seconds
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_files -from_files /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/constrs_fmc228_pcie/imports/constrs_1/pins_fmc228_fmc1.xdc -to_files /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/pins_fmc228_fmc1.xdc -filesets [get_filesets *] 
+// Tcl Message: INFO: [filemgmt 20-762] Replacing file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/constrs_1/pins_fmc228_fmc1.xdc' with file '/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/constrs_fmc228_pcie/imports/constrs_1/pins_fmc228_fmc1.xdc'. 
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_amc502_fmc228, timing_amc502_fmc228.xdc]", 180, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+// Elapsed time: 22 seconds
+dismissFileChooser();
+// 'dw' command handler elapsed time: 22 seconds
+// Elapsed time: 954 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_amc502_fmc228, pins_xaui.xdc]", 178, false); // z:k (G:JPanel, cv:JFrame)
+// Elapsed time: 106 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_amc502_fei4_xaui, timing_amc502_fei4_xaui.xdc]", 189, false); // z:k (G:JPanel, cv:JFrame)
+// Elapsed time: 120 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_1, VHDL, xil_defaultlib, system_trigger_tb.vhd]", 217, false); // z:k (G:JPanel, cv:JFrame)
+// Elapsed time: 70 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_1, VHDL, xil_defaultlib, event_amc.vhd]", 219, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+// Elapsed time: 53 seconds
+setFileChooser("/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/event_amc.vhd");
+// 'dw' command handler elapsed time: 53 seconds
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_files -from_files /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/event_amc.vhd -to_files /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/event_amc.vhd -filesets [get_filesets *] 
+// Tcl Message: INFO: [filemgmt 20-762] Replacing file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/event_amc.vhd' with file '/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/event_amc.vhd'. 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 57 seconds
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_1, VHDL, hep337dev, fmc228card1_interface.vhd]", 221, false, false, false, false, true, false); // z:k (G:JPanel, cv:JFrame) - Popup Trigger
+selectMenuItem(PAResourceCommand.PACommandNames_SRC_REPLACE_FILE, "Replace File..."); // af:JMenuItem (am:JPopupMenu, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_SRC_REPLACE_FILE
+setFileChooser("/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/fmc228card1_interface.vhd");
+// 'dw' command handler elapsed time: 8 seconds
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_files -from_files /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/fmc228card1_interface.vhd -to_files /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/fmc228card1_interface.vhd -filesets [get_filesets *] 
+// Tcl Message: INFO: [filemgmt 20-762] Replacing file '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.srcs/sources_1/fmc228card1_interface.vhd' with file '/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/fmc228card1_interface.vhd'. 
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 109 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near signal. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd:46]. ]", 3, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near signal. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd:46]. ]", 3, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near signal. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd:46]. ]", 3, true, false, false, false, false, true); // al:k (JViewport:JComponent, cv:JFrame) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near signal. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd:46]. , [HDL 9-806] Syntax error near =. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd:56]. ]", 4, false); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near signal. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd:46]. , [HDL 9-806] Syntax error near =. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd:56]. ]", 4, false, false, false, false, false, true); // al:k (JViewport:JComponent, cv:JFrame) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near signal. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd:46]. , [HDL 9-806] Syntax error near =. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd:56]. ]", 4, false); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near signal. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd:46]. , [HDL 9-806] Syntax error near =. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd:56]. ]", 4, false, false, false, false, false, true); // al:k (JViewport:JComponent, cv:JFrame) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near signal. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd:46]. , [HDL 9-806] Syntax error near =. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd:56]. ]", 4, false); // al:k (JViewport:JComponent, cv:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd;-;;-;16;-;line;-;56;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectCodeEditor("adc_stream_buffer_testbend.vhd", 105, 556); // bH:N (JPanel:JComponent, cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,188 MB. GUI used memory: 63 MB. Current time: 11/13/23 5:30:20 PM CST
+selectCodeEditor("adc_stream_buffer_testbend.vhd", 74, 592); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near signal. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd:46]. ]", 3, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd;-;;-;16;-;line;-;46;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near signal. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd:46]. ]", 3, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd;-;;-;16;-;line;-;46;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectCodeEditor("adc_stream_buffer_testbend.vhd", 103, 476); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 21 seconds
+selectCodeEditor("adc_stream_buffer_testbend.vhd", 293, 457); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("adc_stream_buffer_testbend.vhd", 84, 471); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "adc_stream_buffer_testbend.vhd", 'v'); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("adc_stream_buffer_testbend.vhd", 91, 502); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("adc_stream_buffer_testbend.vhd", 62, 504); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("adc_stream_buffer_testbend.vhd", 72, 531); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near begin. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd:48]. ]", 3, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd;-;;-;16;-;line;-;48;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near begin. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd:48]. ]", 3, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd;-;;-;16;-;line;-;48;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near begin. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd:48]. ]", 3); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near begin. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd:48]. , [HDL 9-806] Syntax error near :=. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd:50]. ]", 4, false); // al:k (JViewport:JComponent, cv:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd;-;;-;16;-;line;-;50;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near begin. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd:48]. , [HDL 9-806] Syntax error near :=. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd:50]. ]", 4, false); // al:k (JViewport:JComponent, cv:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd;-;;-;16;-;line;-;50;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near begin. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd:48]. , [HDL 9-806] Syntax error near :=. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd:51]. ]", 5, false); // al:k (JViewport:JComponent, cv:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd;-;;-;16;-;line;-;51;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near begin. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd:48]. , [HDL 9-806] Syntax error near :=. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd:50]. ]", 4, false); // al:k (JViewport:JComponent, cv:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd;-;;-;16;-;line;-;50;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near begin. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd:48]. ]", 3, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd;-;;-;16;-;line;-;48;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectCodeEditor("adc_stream_buffer_testbend.vhd", 260, 402); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("adc_stream_buffer_testbend.vhd", 246, 477); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near signal. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd:46]. ]", 3, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/adc_stream_buffer_testbend.vhd;-;;-;16;-;line;-;46;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectCodeEditor("adc_stream_buffer_testbend.vhd", 164, 419); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("adc_stream_buffer_testbend.vhd", 152, 428); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+typeControlKey(null, null, 'z');
+selectCodeEditor("adc_stream_buffer_testbend.vhd", 146, 430, true, false, false, false, false); // bH:N (JPanel:JComponent, cv:JFrame) - Shift Key
+selectCodeEditor("adc_stream_buffer_testbend.vhd", 132, 413); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_1, VHDL, xil_defaultlib, add8_tb.vhd]", 211, false); // z:k (G:JPanel, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Simulation-Only Sources, sim_1, VHDL, xil_defaultlib, add8_tb.vhd]", 211, false, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click
+// Elapsed time: 13 seconds
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Hierarchy", 0); // g:JideTabbedPane (N:aK, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_fmc228_pcie - behavioral (top_fmc228_pcie.vhd)]", 1, true); // z:k (G:JPanel, cv:JFrame) - Node
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Design Sources, top_fmc228_pcie - behavioral (top_fmc228_pcie.vhd)]", 1, true, false, false, false, false, true); // z:k (G:JPanel, cv:JFrame) - Double Click - Node
+// Elapsed time: 10 seconds
+closeView(PAResourceOtoP.PAViews_CODE, "Code"); // D:b
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_fmc228_pcie.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 11 seconds
+selectCodeEditor("adc_stream_buffer_testbend.vhd", 119, 350); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("adc_stream_buffer_testbend.vhd", 102, 391); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("adc_stream_buffer_testbend.vhd", 107, 382); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 11 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "adc_stream_buffer_testbend.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// Elapsed time: 14 seconds
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_fmc228_pcie.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("adc_stream_buffer_testbend.vhd", 169, 472); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 13 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near end. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/add8_tb.vhd:51]. ]", 3, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/add8_tb.vhd;-;;-;16;-;line;-;51;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectCodeEditor("add8_tb.vhd", 107, 247); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 10 seconds
+selectCodeEditor("add8_tb.vhd", 87, 233); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near ;. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/add8_tb.vhd:64]. ]", 3, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/add8_tb.vhd;-;;-;16;-;line;-;64;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near ;. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/add8_tb.vhd:64]. ]", 3); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near ;. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/add8_tb.vhd:64]. ]", 3, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/add8_tb.vhd;-;;-;16;-;line;-;64;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectCodeEditor("add8_tb.vhd", 75, 397); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "add8_tb.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_fmc228_pcie.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "adc_stream_buffer_testbend.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "add8_tb.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "adc_stream_buffer_testbend.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectCodeEditor("add8_tb.vhd", 178, 422); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("add8_tb.vhd", 201, 445); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("add8_tb.vhd", 157, 570); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("add8_tb.vhd", 151, 558); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 43 seconds
+selectCodeEditor("add8_tb.vhd", 101, 560); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("add8_tb.vhd", 84, 568); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "add8_tb.vhd", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 231 seconds
+typeControlKey((HResource) null, "add8_tb.vhd", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+typeControlKey((HResource) null, "add8_tb.vhd", 'c'); // bH:N (JPanel:JComponent, cv:JFrame)
+// Elapsed time: 16 seconds
+selectCodeEditor("add8_tb.vhd", 74, 548); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near ;. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/add8_tb.vhd:64]. ]", 3, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/add8_tb.vhd;-;;-;16;-;line;-;64;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+// Elapsed time: 22 seconds
+selectCodeEditor("add8_tb.vhd", 166, 440); // bH:N (JPanel:JComponent, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "add8_tb.vhd", 2); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "top_fmc228_pcie.vhd", 1); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+selectTab("PlanAheadTabBaseWorkspace_JideTabbedPane", (HResource) null, "adc_stream_buffer_testbend.vhd", 3); // TdiGroup:JideTabbedPane (CodeEditorDocumentPane:DocumentPane, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 16 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [HDL 9-806] Syntax error near =. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/add8_tb.vhd:75]. ]", 3, false); // al:k (JViewport:JComponent, cv:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/add8_tb.vhd;-;;-;16;-;line;-;75;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+selectCodeEditor("add8_tb.vhd", 67, 605); // bH:N (JPanel:JComponent, cv:JFrame)
+selectCodeEditor("add8_tb.vhd", 64, 610); // bH:N (JPanel:JComponent, cv:JFrame)
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_UPDATE_GRAPH
+// TclEventType: DG_ANALYSIS_MSG_RESET
+// TclEventType: DG_UPDATE_GRAPH
+// Elapsed time: 14 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [filemgmt 20-1607] event_amc was found in multiple libraries (hep337dev & xil_defaultlib), making the instantiation ambiguous and possibly leading to unexpected results; using library xil_defaultlib. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/top_fmc228_pcie.vhd:979]. ]", 3, false); // al:k (JViewport:JComponent, cv:JFrame)
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sources_1/top_fmc228_pcie.vhd;-;;-;16;-;line;-;979;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+// [Engine Memory]: 1,192 MB (+59kb) [00:51:13]
+// Elapsed time: 11 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Analysis Results, sim_1, [filemgmt 56-4] No use statement was found for add8, instantiation uut; although matches were found in other libraries. [/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/add8_tb.vhd:63]. ]", 4, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+messagesViewCrossProbe(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "src;-;/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.srcs/sim_1/new/add8_tb.vhd;-;;-;16;-;line;-;63;-;;-;16;-;"); // al:k (JViewport:JComponent, cv:JFrame)
+// Elapsed time: 19 seconds
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands]", 0); // al:k (JViewport:JComponent, cv:JFrame)
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_project /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.xpr. ]", 1); // al:k (JViewport:JComponent, cv:JFrame)
+// Elapsed time: 15 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_project /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.xpr. , [filemgmt 56-3] IPUserFilesDir: Could not find the directory '/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.ip_user_files'.. ]", 3, false); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_project /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.xpr. , [filemgmt 56-3] IPUserFilesDir: Could not find the directory '/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.ip_user_files'.. ]", 3, false, false, false, false, false, true); // al:k (JViewport:JComponent, cv:JFrame) - Double Click
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_project /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.xpr. , [filemgmt 56-3] IPUserFilesDir: Could not find the directory '/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.ip_user_files'.. ]", 3, false); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_project /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.xpr. , [filemgmt 56-3] IPUserFilesDir: Could not find the directory '/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.ip_user_files'.. ]", 3, false, false, false, false, false, true); // al:k (JViewport:JComponent, cv:JFrame) - Double Click
+// Elapsed time: 12 seconds
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_project /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.xpr. , [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.. ]", 4, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_project /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.xpr. , [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.. ]", 4, true, false, false, false, false, true); // al:k (JViewport:JComponent, cv:JFrame) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_project /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.xpr. , [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.. ]", 4, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, open_project /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.xpr. , [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.. ]", 4, true, false, false, false, false, true); // al:k (JViewport:JComponent, cv:JFrame) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, update_files -from_files /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_amc502_fmc164.elf -to_files /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_fmc164.elf -filesets [get_filesets *]. ]", 5, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, update_files -from_files /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_amc502_fmc164.elf -to_files /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_fmc164.elf -filesets [get_filesets *]. ]", 5, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, update_files -from_files /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_amc502_fmc164.elf -to_files /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_fmc164.elf -filesets [get_filesets *]. ]", 5, true, false, false, false, false, true); // al:k (JViewport:JComponent, cv:JFrame) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, update_files -from_files /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_amc502_fmc164.elf -to_files /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_fmc164.elf -filesets [get_filesets *]. , [IP_Flow 19-3899] Cannot get the environment domain name variable for the component vendor name. Setting the vendor name to 'user.org'.. ]", 6, false); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, update_files -from_files /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_amc502_fmc164.elf -to_files /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_fmc164.elf -filesets [get_filesets *]. ]", 5, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, update_files -from_files /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_amc502_fmc164.elf -to_files /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_fmc164.elf -filesets [get_filesets *]. ]", 5, true, false, false, false, false, true); // al:k (JViewport:JComponent, cv:JFrame) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, update_files -from_files /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_amc502_fmc164.elf -to_files /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_fmc164.elf -filesets [get_filesets *]. ]", 5, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Vivado Commands, update_files -from_files /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.sdk/monitor_amc502/Debug/monitor_amc502_fmc164.elf -to_files /home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_fmc164.elf -filesets [get_filesets *]. ]", 5, true, false, false, false, false, true); // al:k (JViewport:JComponent, cv:JFrame) - Double Click - Node
+expandTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis]", 11); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1]", 12, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1]", 12, true, false, false, false, false, true); // al:k (JViewport:JComponent, cv:JFrame) - Double Click - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs]", 14, true); // al:k (JViewport:JComponent, cv:JFrame) - Node
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, Out-of-Context Module Runs, jesd204_phy_1_synth_1]", 22, true, false, false, false, false, true); // al:k (JViewport:JComponent, cv:JFrame) - Double Click - Node
+selectCheckBox(PAResourceItoN.MsgView_WARNING_MESSAGES, (String) null, false); // h:JCheckBox (JPanel:JComponent, cv:JFrame): FALSE
+selectTree(PAResourceItoN.MsgTreePanel_MESSAGE_VIEW_TREE, "[, Synthesis, synth_1, [Vivado 12-172] File or Directory '/home/rhensley/Documents/mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_null/Debug/monitor_null.elf' does not exist. ]", 5, false); // al:k (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Synthesis, Run Synthesis]", 17, false); // x:Y (w:G, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_RUN_SYNTHESIS
+// bL:g (cv:JFrame):  Resetting Runs : addNotify
+// TclEventType: RUN_MODIFY
+// TclEventType: RUN_RESET
+// TclEventType: RUN_MODIFY
+// Tcl Message: reset_run synth_1 
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs synth_1 
+// Tcl Message: [Mon Nov 13 17:42:41 2023] Launched synth_1... Run output will be captured here: /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.runs/synth_1/runme.log 
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,200 MB. GUI used memory: 63 MB. Current time: 11/13/23 5:42:45 PM CST
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+// Elapsed time: 27 seconds
+selectTab((HResource) null, (HResource) null, "Reports", 3); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+selectTab((HResource) null, (HResource) null, "Log", 2); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+// Elapsed time: 13 seconds
+selectTree(PAResourceItoN.LogPanel_LOG_NAVIGATOR, "[]", 0, false, false, false, false, true, false); // k:JTree (JViewport:JComponent, cv:JFrame) - Popup Trigger
+selectTree(PAResourceItoN.LogPanel_LOG_NAVIGATOR, "[]", 0, false); // k:JTree (JViewport:JComponent, cv:JFrame)
+selectTree(PAResourceItoN.LogPanel_LOG_NAVIGATOR, "[]", 0, false, false, false, false, false, true); // k:JTree (JViewport:JComponent, cv:JFrame) - Double Click
+selectTree(PAResourceItoN.LogPanel_LOG_NAVIGATOR, "[]", 0, false, false, false, false, true, false); // k:JTree (JViewport:JComponent, cv:JFrame) - Popup Trigger
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Implementation", 1); // g:JideTabbedPane (x:aK, cv:JFrame)
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Synthesis", 0); // g:JideTabbedPane (x:aK, cv:JFrame)
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Implementation", 1); // g:JideTabbedPane (x:aK, cv:JFrame)
+selectTab(PAResourceItoN.LogView_TABBED_PANE, (HResource) null, "Simulation", 2); // g:JideTabbedPane (x:aK, cv:JFrame)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+// Elapsed time: 10 seconds
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// ap:G (cv:JFrame): Synthesis Completed: addNotify
+// Elapsed time: 53 seconds
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:G)
+// Run Command: PAResourceCommand.PACommandNames_RUN_IMPLEMENTATION
+// bL:g (cv:JFrame):  Starting Design Runs : addNotify
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 
+// Tcl Message: [Mon Nov 13 17:44:49 2023] Launched impl_1... Run output will be captured here: /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.runs/impl_1/runme.log 
+dismissDialog("Starting Design Runs"); // bL:g (cv:JFrame)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+selectTab((HResource) null, (HResource) null, "Messages", 1); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+selectTab((HResource) null, (HResource) null, "Tcl Console", 0); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+// Elapsed time: 10 seconds
+selectTab((HResource) null, (HResource) null, "Design Runs", 4); // FrameContainer:JideTabbedPane (ContainerContainer:JideSplitPane, cv:JFrame)
+// TclEventType: RUN_STEP_COMPLETED
+// TclEventType: RUN_COMPLETED
+// ap:G (cv:JFrame): Implementation Completed: addNotify
+// Elapsed time: 272 seconds
+selectRadioButton(PAResourceCommand.PACommandNames_RUN_BITGEN, "Generate Bitstream"); // a:JRadioButton (JPanel:JComponent, ap:G)
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, ap:G)
+// Run Command: PAResourceCommand.PACommandNames_RUN_BITGEN
+dismissDialog("Implementation Completed"); // ap:G (cv:JFrame)
+// TclEventType: RUN_LAUNCH
+// TclEventType: RUN_MODIFY
+// Tcl Message: launch_runs impl_1 -to_step write_bitstream 
+// Tcl Message: [Mon Nov 13 17:49:49 2023] Launched impl_1... Run output will be captured here: /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.runs/impl_1/runme.log 
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "IP Sources", 1); // g:JideTabbedPane (N:aK, cv:JFrame)
+selectTab(PAResourceEtoH.FileSetView_TABBED_PANE, (HResource) null, "Libraries", 2); // g:JideTabbedPane (N:aK, cv:JFrame)
+selectTree(PAResourceEtoH.FileSetPanel_FILE_SET_PANEL_TREE, "[root, Constraints, constrs_amc502_fmc228, pins_xaui.xdc]", 183, false); // z:k (G:JPanel, cv:JFrame)
+// TclEventType: RUN_COMPLETED
+// ap:G (cv:JFrame): Bitstream Generation Completed: addNotify
+// Elapsed time: 136 seconds
+selectButton(RDIResource.BaseDialog_CANCEL, "Cancel"); // a:JButton (JPanel:JComponent, ap:G)
+dismissDialog("Bitstream Generation Completed"); // ap:G (cv:JFrame)
+// Elapsed time: 54 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+selectMenu(PAResourceItoN.MainMenuMgr_OPEN_RECENT_PROJECT, "Open Recent Project"); // ab:JMenu (JPopupMenu:JComponent, cv:JFrame)
+selectMenuItem(PAResourceCommand.PACommandNames_CLOSE_PROJECT, "Close Project"); // af:JMenuItem (JPopupMenu:JComponent, cv:JFrame)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // V:JideMenu (CommandMenuBar:CommandBar, cv:JFrame)
+// Run Command: PAResourceCommand.PACommandNames_CLOSE_PROJECT
+// G:be (cv:JFrame): Close Project: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a:JButton (JPanel:JComponent, G:be)
+// bL:g (cv:JFrame):  Close Project : addNotify
+// TclEventType: PROJECT_CLOSE
+dismissDialog("Close Project"); // G:be (cv:JFrame)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,208 MB. GUI used memory: 41 MB. Current time: 11/13/23 5:53:15 PM CST
+// Tcl Message: close_project 
+// Tcl Message: ****** Webtalk v2016.2 (64-bit)   **** SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016   **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016     ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.  source /home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.hw/webtalk/labtool_webtalk.tcl -notrace INFO: [Common 17-206] Exiting Webtalk at Mon Nov 13 17:53:15 2023... 
+dismissDialog("Close Project"); // bL:g (cv:JFrame)
