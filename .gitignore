@@ -1,0 +1,9 @@
+mu2e_1.cache
+mu2e_1.hw
+mu2e_1.runs
+mu2e_1.sim
+mu2e_1/
+vivado*
+webtalk*
+.Xil
+*.log
