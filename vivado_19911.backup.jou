@@ -1,0 +1,16 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Fri Feb  1 13:02:33 2019
+# Process ID: 19911
+# Current directory: /home/mu2e/mu2e_firmware/firmware
+# Command line: vivado -source recreate_project.tcl mu2e_1.xpr
+# Log file: /home/mu2e/mu2e_firmware/firmware/vivado.log
+# Journal file: /home/mu2e/mu2e_firmware/firmware/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project mu2e_1.xpr
+source recreate_project.tcl
+current_project mu2e_1
+close_project

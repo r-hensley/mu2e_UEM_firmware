@@ -1,0 +1,271 @@
+#-----------------------------------------------------------
+# Vivado v2016.2 (64-bit)
+# SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+# IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+# Start of session at: Thu Feb 14 13:31:02 2019
+# Process ID: 5340
+# Current directory: /home/mu2e/mu2e_firmware/firmware
+# Command line: vivado -source recreate_project.tcl mu2e_1.xpr
+# Log file: /home/mu2e/mu2e_firmware/firmware/vivado.log
+# Journal file: /home/mu2e/mu2e_firmware/firmware/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project mu2e_1.xpr
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/mu2e/mu2e_1/firmware/mu2e_1.srcs/sim_1/sim_xaui_tb_behav.wcfg'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/mu2e/mu2e_1/firmware/mu2e_1.srcs/sim_1/trigger_in_tb.vhd'.
+CRITICAL WARNING: [Project 1-19] Could not find the file '/home/mu2e/mu2e_1/firmware/mu2e_1.srcs/sim_1/system_trigger_tb.vhd'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.2/data/ip'.
+open_project: Time (s): cpu = 00:00:31 ; elapsed = 00:00:26 . Memory (MB): peak = 5998.938 ; gain = 202.258 ; free physical = 3094 ; free virtual = 12447
+source recreate_project.tcl
+# set origin_dir "."
+# if { [info exists ::origin_dir_loc] } {
+#   set origin_dir $::origin_dir_loc
+# }
+# variable script_file
+# set script_file "recreate_project.tcl"
+# proc help {} {
+#   variable script_file
+#   puts "\nDescription:"
+#   puts "Recreate a Vivado project from this script. The created project will be"
+#   puts "functionally equivalent to the original project for which this script was"
+#   puts "generated. The script contains commands for creating a project, filesets,"
+#   puts "runs, adding/importing sources and setting properties on various objects.\n"
+#   puts "Syntax:"
+#   puts "$script_file"
+#   puts "$script_file -tclargs \[--origin_dir <path>\]"
+#   puts "$script_file -tclargs \[--help\]\n"
+#   puts "Usage:"
+#   puts "Name                   Description"
+#   puts "-------------------------------------------------------------------------"
+#   puts "\[--origin_dir <path>\]  Determine source file paths wrt this path. Default"
+#   puts "                       origin_dir path value is \".\", otherwise, the value"
+#   puts "                       that was set with the \"-paths_relative_to\" switch"
+#   puts "                       when this script was generated.\n"
+#   puts "\[--help\]               Print help information for this script"
+#   puts "-------------------------------------------------------------------------\n"
+#   exit 0
+# }
+# if { $::argc > 0 } {
+#   for {set i 0} {$i < [llength $::argc]} {incr i} {
+#     set option [string trim [lindex $::argv $i]]
+#     switch -regexp -- $option {
+#       "--origin_dir" { incr i; set origin_dir [lindex $::argv $i] }
+#       "--help"       { help }
+#       default {
+#         if { [regexp {^-} $option] } {
+#           puts "ERROR: Unknown option '$option' specified, please type '$script_file -tclargs --help' for usage info.\n"
+#           return 1
+#         }
+#       }
+#     }
+#   }
+# }
+# set orig_proj_dir "[file normalize "$origin_dir/"]"
+# create_project -force mu2e_1 ./mu2e_1 -part xc7k420tffg1156-2
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2016.2/data/ip'.
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 6034.961 ; gain = 34.023 ; free physical = 3087 ; free virtual = 12440
+# set proj_dir [get_property directory [current_project]]
+# set_msg_config  -ruleid {1}  -id {[BD 41-1306]}  -suppress  -source 2
+# set_msg_config  -ruleid {2}  -id {[BD 41-1271]}  -suppress  -source 2
+# set obj [get_projects mu2e_1]
+# set_property "default_lib" "xil_defaultlib" $obj
+# set_property "generate_ip_upgrade_log" "0" $obj
+# set_property "part" "xc7k420tffg1156-2" $obj
+# set_property "sim.ip.auto_export_scripts" "1" $obj
+# set_property "simulator_language" "Mixed" $obj
+# set_property "source_mgmt_mode" "None" $obj
+# set_property "target_language" "VHDL" $obj
+# set_property "xpm_libraries" "XPM_MEMORY" $obj
+# if {[string equal [get_filesets -quiet sources_1] ""]} {
+#   create_fileset -srcset sources_1
+# }
+# set obj [get_filesets sources_1]
+# set files [list \
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/add8.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/iobus.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/lfsr_n.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/crc32.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/cksum.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/ipbuf.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/fmc164_readout_buffer.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/fmc164.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/gbe.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/tclkb_driver.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/tclka_receiver.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/tclka_counter.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/i2c.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/clkfreq.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/amc502.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/sendpkt.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/ip.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/arprep.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/txether.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/icmp.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/streampkt.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/udp.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/ipheader.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/icmprep.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/udpbuffer.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/arp.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/gbe_stream_buffer.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/txbuffer.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/arpreq.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/ethernet.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/arptab.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/fmc164_threshold_trigger.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/fmc164_interface.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/amc502_interface.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/iobus_interface.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/gbe_interface.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/top_amc502_fmc164.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/fei4_parse_new.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/fei4_match.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/fei4_lv1count.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/fei4_pixel_fifo.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/fei4rx.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/fei4.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/crc32x64.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/xaui_udpbuffer.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/xaui_udp.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/xaui_txbuffer.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/xaui_sendpkt.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/xaui_icmpreq.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/xaui_icmprep.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/xaui_icmp.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/xaui_ethernet.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/xaui_arpreq.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/xaui_arprep.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/xaui_arp.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/xaui_arbiter.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/xaui.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/fei4_readout.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/fei4_pulser.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/fei4_event_builder.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/fei4_bcocounter.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/fei4tx.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/xaui_interface.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/fei4_interface.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/top_amc502_fei4_xaui.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/fmc164_adc_buffer.vhd"]"\
+#  "[file normalize "$origin_dir/../../mu2e_1/firmware/mu2e_1.srcs/sources_1/adc_pulse_height.vhd"]"\
+#  "[file normalize "$origin_dir/../../mu2e_1/firmware/mu2e_1.srcs/sources_1/adc_histogram.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/adc_fifo.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/top_amc502_xaui.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/top_amc502.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/top_null.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.sdk/monitor_null/Debug/monitor_null.elf"]"\
+#  "[file normalize "$origin_dir/../../mu2e_1/firmware/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_xaui.elf"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/fei4_trigger.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/fei4_readout_buffer.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/fei4_stream.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/fei4_fifo.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/decoder_10b8b_rom.coe"]"\
+#  "[file normalize "$origin_dir/../../project_3/project_3.srcs/sources_1/new/decoder_10b8b_rom.coe"]"\
+#  "[file normalize "$origin_dir/../../mu2e_1/firmware/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_xaui_fei4.elf"]"\
+#  "[file normalize "$origin_dir/../../mu2e_1/firmware/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_fmc164.elf"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/top_amc502_fmc228.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/fmc228.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/fmc228_interface.vhd"]"\
+#  "[file normalize "$origin_dir/../../mu2e_1/firmware/mu2e_1.srcs/sources_1/adc_trigger.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/hmc_spi.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/adc_buffer_streamer.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/adc_spi.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/adc_buffer_pool.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/lmk_spi.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/adc_buffer.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/jesd204_adc.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/ilas.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/lfsr.vhd"]"\
+#  "[file normalize "$origin_dir/../../mu2e_1/firmware/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_fmc228.elf"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/latch_generator.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/event_generator.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/xaui_stream_buffer.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/xaui_streampkt.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/crc32x64rom.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/crc8x32_const.vhd"]"\
+#  "[file normalize "$origin_dir/../../mu2e_1/firmware/mu2e_1.srcs/sources_1/crc8x32_lookup.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/validation.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/trigger.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/trigger_ram.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/xaui_trigger.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/top_fmc228_pcie.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/i2c_slave.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/trigger_in.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/system_trigger.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/link_interface.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/link.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.srcs/sources_1/trigger_pipeline.vhd"]"\
+#  "[file normalize "$origin_dir/mu2e_1.sdk/monitor_amc502/Debug/monitor_fmc228_pcie.elf"]"\
+# ]
+# add_files -norecurse -fileset $obj $files
+ERROR: [Vivado 12-172] File or Directory '/home/mu2e/mu2e_1/firmware/mu2e_1.srcs/sources_1/adc_pulse_height.vhd' does not exist
+current_project mu2e_1
+reset_run synth_1
+launch_runs synth_1
+[Thu Feb 14 13:34:18 2019] Launched synth_1...
+Run output will be captured here: /home/mu2e/mu2e_firmware/firmware/mu2e_1.runs/synth_1/runme.log
+launch_runs impl_1
+[Thu Feb 14 13:40:02 2019] Launched impl_1...
+Run output will be captured here: /home/mu2e/mu2e_firmware/firmware/mu2e_1.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream
+[Thu Feb 14 13:48:31 2019] Launched impl_1...
+Run output will be captured here: /home/mu2e/mu2e_firmware/firmware/mu2e_1.runs/impl_1/runme.log
+open_hw
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2016.2
+  **** Build date : Jun  2 2016-16:54:00
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/000018dda21001
+ERROR: [Labtools 27-2270] Target localhost:3121/xilinx_tcf/Xilinx/000018dda21001 is no longer available.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+open_hw_target {localhost:3121/xilinx_tcf/Xilinx/000016e636ca01}
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/000016e636ca01
+set_property PROGRAM.FILE {/home/mu2e/mu2e_firmware/firmware/mu2e_1.runs/impl_1/top_fmc228_pcie.bit} [lindex [get_hw_devices] 0]
+current_hw_device [lindex [get_hw_devices] 0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7k420t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+set_property PROBES.FILE {} [lindex [get_hw_devices] 0]
+set_property PROGRAM.FILE {/home/mu2e/mu2e_firmware/firmware/mu2e_1.runs/impl_1/top_fmc228_pcie.bit} [lindex [get_hw_devices] 0]
+program_hw_devices [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 6165.570 ; gain = 0.000 ; free physical = 2968 ; free virtual = 12337
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7k420t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+refresh_hw_device [lindex [get_hw_devices] 0]
+INFO: [Labtools 27-1434] Device xc7k420t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3123] The debug hub core was not detected at User Scan Chain 1 or 3.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active OR
+2. Manually launch hw_server with -e "set xsdb-user-bscan <C_USER_SCAN_CHAIN scan_chain_number>" to detect the debug hub at User Scan Chain of 2 or 4. To determine the user scan chain setting, open the implemented design and use: get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub].
+close_project
+****** Webtalk v2016.2 (64-bit)
+  **** SW Build 1577090 on Thu Jun  2 16:32:35 MDT 2016
+  **** IP Build 1577682 on Fri Jun  3 12:00:54 MDT 2016
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source /home/mu2e/mu2e_firmware/firmware/mu2e_1.hw/webtalk/labtool_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu Feb 14 14:28:27 2019...
+exit
+INFO: [Common 17-206] Exiting Vivado at Thu Feb 14 14:28:35 2019...

@@ -2,8 +2,8 @@
 <GenRun Id="bd_fc5c_lmb_bram_I_0_synth_1" LaunchPart="xc7k420tffg1156-2" LaunchTime="1556831770">
   <File Type="VDS-TIMING-PB" Name="bd_fc5c_lmb_bram_I_0_timing_summary_synth.pb"/>
   <File Type="VDS-TIMINGSUMMARY" Name="bd_fc5c_lmb_bram_I_0_timing_summary_synth.rpt"/>
-  <File Type="RDS-PROPCONSTRS" Name="bd_fc5c_lmb_bram_I_0_drc_synth.rpt"/>
   <File Type="PA-TCL" Name="bd_fc5c_lmb_bram_I_0.tcl"/>
+  <File Type="RDS-PROPCONSTRS" Name="bd_fc5c_lmb_bram_I_0_drc_synth.rpt"/>
   <File Type="RDS-RDS" Name="bd_fc5c_lmb_bram_I_0.vds"/>
   <File Type="RDS-UTIL" Name="bd_fc5c_lmb_bram_I_0_utilization_synth.rpt"/>
   <File Type="RDS-UTIL-PB" Name="bd_fc5c_lmb_bram_I_0_utilization_synth.pb"/>
