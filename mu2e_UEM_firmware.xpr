@@ -3,19 +3,19 @@
 <!--                                                         -->
 <!-- Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="14" Path="C:/Users/ericp/Xilinx/mu2e_UEM_firmware/mu2e_UEM_firmware.xpr">
+<Project Version="7" Minor="14" Path="/home/rhensley/Documents/mu2e_UEM_firmware/mu2e_UEM_firmware.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="d1bec1a1b0fd4bbcbac4aa43cf9958bf"/>
     <Option Name="Part" Val="xc7k420tffg1156-2"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
-    <Option Name="CompiledLibDirModelSim" Val="C:/Users/ericp/Xilinx/mu2e_UEM_firmware/mu2e_UEM_firmware.cache/compile_simlib/modelsim"/>
-    <Option Name="CompiledLibDirQuesta" Val="C:/Users/ericp/Xilinx/mu2e_UEM_firmware/mu2e_UEM_firmware.cache/compile_simlib/questa"/>
-    <Option Name="CompiledLibDirIES" Val="C:/Users/ericp/Xilinx/mu2e_UEM_firmware/mu2e_UEM_firmware.cache/compile_simlib/ies"/>
-    <Option Name="CompiledLibDirVCS" Val="C:/Users/ericp/Xilinx/mu2e_UEM_firmware/mu2e_UEM_firmware.cache/compile_simlib/vcs"/>
-    <Option Name="CompiledLibDirRiviera" Val="C:/Users/ericp/Xilinx/mu2e_UEM_firmware/mu2e_UEM_firmware.cache/compile_simlib/riviera"/>
-    <Option Name="CompiledLibDirActivehdl" Val="C:/Users/ericp/Xilinx/mu2e_UEM_firmware/mu2e_UEM_firmware.cache/compile_simlib/activehdl"/>
+    <Option Name="CompiledLibDirModelSim" Val="/home/rhensley/Documents/mu2e_UEM_firmware/Users/ericp/Xilinx/mu2e_UEM_firmware/mu2e_UEM_firmware.cache/compile_simlib/modelsim"/>
+    <Option Name="CompiledLibDirQuesta" Val="/home/rhensley/Documents/mu2e_UEM_firmware/Users/ericp/Xilinx/mu2e_UEM_firmware/mu2e_UEM_firmware.cache/compile_simlib/questa"/>
+    <Option Name="CompiledLibDirIES" Val="/home/rhensley/Documents/mu2e_UEM_firmware/Users/ericp/Xilinx/mu2e_UEM_firmware/mu2e_UEM_firmware.cache/compile_simlib/ies"/>
+    <Option Name="CompiledLibDirVCS" Val="/home/rhensley/Documents/mu2e_UEM_firmware/Users/ericp/Xilinx/mu2e_UEM_firmware/mu2e_UEM_firmware.cache/compile_simlib/vcs"/>
+    <Option Name="CompiledLibDirRiviera" Val="/home/rhensley/Documents/mu2e_UEM_firmware/Users/ericp/Xilinx/mu2e_UEM_firmware/mu2e_UEM_firmware.cache/compile_simlib/riviera"/>
+    <Option Name="CompiledLibDirActivehdl" Val="/home/rhensley/Documents/mu2e_UEM_firmware/Users/ericp/Xilinx/mu2e_UEM_firmware/mu2e_UEM_firmware.cache/compile_simlib/activehdl"/>
     <Option Name="TargetLanguage" Val="VHDL"/>
     <Option Name="BoardPart" Val=""/>
     <Option Name="SourceMgmtMode" Val="DisplayOnly"/>
@@ -863,13 +863,13 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_null/Debug/monitor_null.elf">
+      <File Path="$PSDKDIR/monitor_null/Debug/monitor_null.elf">
         <FileInfo>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="IsVisible" Val="1"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_xaui.elf">
+      <File Path="$PSDKDIR/monitor_amc502/Debug/monitor_amc502_xaui.elf">
         <FileInfo>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="IsVisible" Val="1"/>
@@ -892,19 +892,19 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_xaui_fei4.elf">
+      <File Path="$PSDKDIR/monitor_amc502/Debug/monitor_amc502_xaui_fei4.elf">
         <FileInfo>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="IsVisible" Val="1"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_fmc164.elf">
+      <File Path="$PSDKDIR/monitor_amc502/Debug/monitor_amc502_fmc164.elf">
         <FileInfo>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="IsVisible" Val="1"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_amc502_fmc228.elf">
+      <File Path="$PSDKDIR/monitor_amc502/Debug/monitor_amc502_fmc228.elf">
         <FileInfo>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="ScopedToRef" Val="microblaze_mcs_0"/>
@@ -993,7 +993,7 @@
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
       </File>
-      <File Path="$PPRDIR/../mu2e_monitor_firmware_original/mu2e_monitor_firmware_original/firmware_New_v2/mu2e_1.sdk/monitor_amc502/Debug/monitor_fmc228_pcie.elf">
+      <File Path="$PSDKDIR/monitor_amc502/Debug/monitor_fmc228_pcie.elf">
         <FileInfo>
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="IsVisible" Val="1"/>
@@ -1305,12 +1305,6 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="microblaze_mcs_0.xci" FileRelPathName="ip/ip_7/bd_fc5c_iomodule_0_0.xci">
-          <Proxy FileSetName="bd_fc5c_iomodule_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="microblaze_mcs_0.xci" FileRelPathName="ip/ip_6/bd_fc5c_lmb_bram_I_0.xci">
-          <Proxy FileSetName="bd_fc5c_lmb_bram_I_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="microblaze_mcs_0.xci" FileRelPathName="ip/ip_5/bd_fc5c_ilmb_cntlr_0.xci">
           <Proxy FileSetName="bd_fc5c_ilmb_cntlr_0"/>
         </CompFileExtendedInfo>
@@ -1320,14 +1314,20 @@
         <CompFileExtendedInfo CompFileName="microblaze_mcs_0.xci" FileRelPathName="ip/ip_3/bd_fc5c_dlmb_0.xci">
           <Proxy FileSetName="bd_fc5c_dlmb_0"/>
         </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="microblaze_mcs_0.xci" FileRelPathName="ip/ip_2/bd_fc5c_ilmb_0.xci">
-          <Proxy FileSetName="bd_fc5c_ilmb_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="microblaze_mcs_0.xci" FileRelPathName="ip/ip_1/bd_fc5c_rst_0_0.xci">
           <Proxy FileSetName="bd_fc5c_rst_0_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="microblaze_mcs_0.xci" FileRelPathName="ip/ip_2/bd_fc5c_ilmb_0.xci">
+          <Proxy FileSetName="bd_fc5c_ilmb_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="microblaze_mcs_0.xci" FileRelPathName="ip/ip_0/bd_fc5c_microblaze_I_0.xci">
           <Proxy FileSetName="bd_fc5c_microblaze_I_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="microblaze_mcs_0.xci" FileRelPathName="ip/ip_7/bd_fc5c_iomodule_0_0.xci">
+          <Proxy FileSetName="bd_fc5c_iomodule_0_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="microblaze_mcs_0.xci" FileRelPathName="ip/ip_6/bd_fc5c_lmb_bram_I_0.xci">
+          <Proxy FileSetName="bd_fc5c_lmb_bram_I_0"/>
         </CompFileExtendedInfo>
       </File>
       <Config>
@@ -1598,21 +1598,18 @@
     <Simulator Name="Riviera">
       <Option Name="Description" Val="Riviera-PRO Simulator"/>
     </Simulator>
-    <Simulator Name="ActiveHDL">
-      <Option Name="Description" Val="Active-HDL Simulator"/>
-    </Simulator>
   </Simulators>
   <Runs Version="1" Minor="10">
     <Run Id="synth_1" Type="Ft3:Synth" SrcSet="sources_1" Part="xc7k420tffg1156-2" ConstrsSet="constrs_fmc228_pcie" Description="Higher performance designs, resource sharing is turned off, the global fanout guide is set to a lower number, FSM extraction forced to one-hot, LUT combining is disabled, equivalent registers are preserved, SRL are inferred  with a larger threshold" State="current" Dir="$PRUNDIR/synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Flow_PerfOptimized_high" Flow="Vivado Synthesis 2016"/>
         <Step Id="synth_design">
-          <Option Id="RepFanoutThreshold">400</Option>
           <Option Id="FsmExtraction">1</Option>
+          <Option Id="RepFanoutThreshold">400</Option>
           <Option Id="ShregMinSize">5</Option>
           <Option Id="KeepEquivalentRegisters">1</Option>
-          <Option Id="ResourceSharing">2</Option>
           <Option Id="NoCombineLuts">1</Option>
+          <Option Id="ResourceSharing">2</Option>
         </Step>
       </Strategy>
       <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
